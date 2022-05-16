@@ -36,8 +36,6 @@ public final class Constants
     public static final int frequency_motor = 1000;
 
     // PID k
-    public static final double kP_V = 3.9;
-    public static final double kI_V = 0;
-
-    public static final double kP_H = 5;
+    public static final double kP_V = 60;
+    public static final double kP_H = 10;
 }
