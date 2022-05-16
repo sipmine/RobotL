@@ -31,14 +31,11 @@ public class FollowTrajCommand extends CommandBase {
         double currentTime = Timer.getFPGATimestamp();
         double dT = currentTime - lastTime;
         lastTime = currentTime;
-
-        subsystem.velocity(0, 0.5, 0);
-        //subsystem.rotated(-0.2);
         subsystem.getTheta(dT);
         subsystem.getX(dT);
         subsystem.getY(dT);
-
-
+        //subsystem.velocity(0.5, 0.5, Math.PI ,dT);
+        subsystem.rotated(Math.PI);
 
     }
 
